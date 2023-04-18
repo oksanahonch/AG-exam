@@ -1,0 +1,268 @@
+* html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+/*Header*/
+.Header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 150px;
+}
+.Header1 {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.Header1Left {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Header1Left a {
+    margin-left: 7%;
+}
+.Header1Left span {
+    margin-left: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.Header1Center {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.Header1Right {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Header1Right a {
+    margin-right: 7%;
+}
+.Header1Right span {
+    margin-left: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.Header1Left a:hover {
+    transition: 200ms;
+    padding-left: 5px;
+}
+.Header1Right a:hover {
+    transition: 200ms;
+    padding-right: 5px;
+}
+.Header2 {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+.Header2Center {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    justify-content: space-around;
+}
+.Header2 span,
+u {
+    margin-left: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+/*Article*/
+.Article1 {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+.Article1Left,
+.Article1Right,
+.Article1Center {
+    width: 33%;
+    height: 100%;
+}
+.Article1Center {
+    background-image: url(../img/photo_2023-04-14_23-23-49.jpg);
+    background-size: cover;
+}
+.Article1Left {
+    background-image: url(../img/photo_2023-04-14_23-27-35.jpg);
+    background-size: cover;
+}
+.Article1Right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    line-height: 2;
+    padding: 10%;
+}
+.Article2 {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+.Article2Left {
+    width: 33%;
+    height: 100%;
+    background-image: url(../img/Article2Left.jpg);
+    background-size: cover;
+}
+.Article2Right {
+    width: 33%;
+    height: 100%;
+    background-image: url(../img/Article2Right.jpg);
+    background-size: cover;
+}
+.Article2Center {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    line-height: 2;
+    padding: 10%;
+}
+/*Footer*/
+.Footer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 500px;
+}
+.FooterUp {
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+.FooterDown {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+.Clients,
+.Company {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.FooterUp p {
+    font-weight: 700;
+}
+.FooterUp a {
+    font-weight: 400;
+    font-size: small;
+    color: black;
+}
+.FooterUp > div > p > a {
+    text-decoration: none;
+}
+.FooterUp > div > p > a:hover {
+    transition: 200ms;
+    padding-left: 5px;
+    color: darkgray;
+}
+.Icons {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Icons a {
+    padding-left: 4%;
+}
+.FooterDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Media*/
+@media screen and (max-width: 1600px) {
+    .Article1Right,
+    .Article2Center {
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 1250px) {
+    #p2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 937px) {
+    h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 860px) {
+    #Max860 {
+        display: none;
+    }
+}
+@media screen and (max-width: 690px) {
+    .Header2Center {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 440px) {
+    .MainHeader {
+        font-size: 25px;
+    }
+    .Article1,
+    .Article2 {
+        flex-flow: column;
+    }
+    .Article1Left,
+    .Article1Center,
+    .Article1Right,
+    .Article2Left,
+    .Article2Center,
+    .Article2Right {
+        width: 100%;
+    }
+    .FooterUp {
+        flex-flow: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .Clients,
+    .Company,
+    .Icons {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .Header2 {
+        font-size: 9px;
+    }
+    article p {
+        font-size: 12px;
+    }
+}
